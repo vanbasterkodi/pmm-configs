@@ -1,35 +1,15 @@
-collections:
-
-  #Made by overlord
-
-  #Remove Label:
-    #build_collection: false
-      #plex_all: true # or whatever kinda of search you want
-      #label.remove: MovieDayRemove
-
-  Movies of The Day:
-    sort_title: zzzz_MovieDay
-    smart_label: random
-    sync_mode: sync
-    plex_search:
-      limit: 1
-      all:
-        year.gte: 1940
-        label.not: MovieDayRemove
-    filters:
-      has_collection: false
-    summary: Randomly picked and highly rated
-    visible_library: true
-    visible_home: true
+templates:
+  Suggestion:
     visible_shared: true
-
-  MovieDayRemove:
-    sort_title: zzzz_MovieDayRemove
+    visible_library: true
     smart_label: random
-    sync_mode: append
+    sort_title: zzz_<<collection_name>>
+collections:
+  Movies of the Day:
+    template: {name: Suggestion}
     plex_search:
-      limit: 30000
       all:
         year.gte: 1940
-        label: Movies of The Day
-    summary: Movies featured on "Movie of The Day" collection will be put into this collection to not be considered again.
+      sort_by: random
+      limit: 2
+    sync_mode: sync
