@@ -9,8 +9,8 @@ collections:
     template: {name: Suggestion}
     plex_search:
       all:
-        year.gte: 1800
+        year.gte: 1940
       sort_by: random
-      limit: 2
+      limit: 1
     sync_mode: sync
  
