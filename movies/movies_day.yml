@@ -21,7 +21,7 @@ collections:
     visible_home: true
     visible_shared: true
 
-  MoviesDayRemove:
+  MovieDayRemove:
     sort_title: zzzz_MovieDayRemove
     smart_label: random
     sync_mode: append
