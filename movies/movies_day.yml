@@ -7,7 +7,7 @@ collections:
       #plex_all: true # or whatever kinda of search you want
       #label.remove: MovieDayRemove
 
-  Movie of The Day:
+  Movies of The Day:
     sort_title: zzzz_MovieDay
     smart_label: random
     sync_mode: sync
@@ -31,5 +31,5 @@ collections:
       limit: 30000
       all:
         year.gte: 1940
-        label: Movie of The Day
+        label: Movies of The Day
     summary: Movies featured on "Movie of The Day" collection will be put into this collection to not be considered again.
