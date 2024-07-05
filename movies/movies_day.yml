@@ -1,27 +1,34 @@
 collections:
-
-  Movie of The Day:
+  #Remove_Label:
+   #build_collection: false
+    #plex_all: true
+    #label.remove: MovieDayRemove
+  Movie of the Day:
     sort_title: zzzz_MovieDay
     smart_label: random
     sync_mode: sync
-    plex_search:
+
+    plex_search: 
       limit: 1
-      all:
+      all: 
         year.gte: 1940
         label.not: MovieDayRemove
-    filters:
-    summary: Randomly picked
+    summary: Suggested movie of the day
     visible_library: true
     visible_home: true
     visible_shared: true
-
+    
   MovieDayRemove:
     sort_title: zzzz_MovieDayRemove
     smart_label: random
     sync_mode: append
-    plex_search:
-      limit: 25000
-      all:
+
+    plex_search: 
+      limit: 30000
+      all: 
         year.gte: 1940
-        label: Movie of The Day
-    summary: Movies featured on "Movie of The Day" collection will be put into this collection to not be considered again.
+        label.not: Movie of the Day
+    summary: Movies feature on movie of the day will not be suggested again.
+    visible_library: true
+    visible_home: true
+    visible_shared: true
