@@ -9,10 +9,10 @@ collections:
 
   Movies of the Day:
     sort_title: zzzz_MoviesDay
-    label: Movies of the Day
+    smart_label: random
     sync_mode: sync
     plex_search:
-      limit: 1
+      limit: 2
       all:
         year.gte: 1940
         label.not: MovieDayRemove
@@ -21,7 +21,7 @@ collections:
     visible_home: true
     visible_shared: true
 
-  MovieDayRemove:
+  MoviesDayRemove:
     sort_title: zzzz_MovieDayRemove
     smart_label: random
     sync_mode: append
