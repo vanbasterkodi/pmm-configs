@@ -1,10 +1,3 @@
-templates:
-  Awards:
-    sort_title: +2_<<num>><<collection_name>>
-    sync_mode: sync
-    collection_mode: hide
-    collection_order: custom
-    cache_builders: 7
 
 collections:
   #Remove_Label:
