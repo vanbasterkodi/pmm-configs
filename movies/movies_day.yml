@@ -1,5 +1,5 @@
 templates:
-  DayMovie:
+  Awards:
     sort_title: +2_<<num>><<collection_name>>
     sync_mode: sync
     collection_mode: hide
