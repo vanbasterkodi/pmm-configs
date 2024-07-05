@@ -9,7 +9,7 @@ collections:
 
   Movies of the Day:
     sort_title: zzzz_MoviesDay
-    smart_label: random
+    label: Movies of the Day
     sync_mode: sync
     plex_search:
       limit: 1
