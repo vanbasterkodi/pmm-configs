@@ -8,7 +8,7 @@ collections:
       #label.remove: MovieDayRemove
 
   Movies of the Day:
-    sort_title: zzzz_MoviesDay
+  #  sort_title: zzzz_MoviesDay
     smart_label: random
     sync_mode: sync
     plex_search:
@@ -22,7 +22,7 @@ collections:
     visible_shared: true
 
   MovieDayRemove:
-    sort_title: zzzz_MovieDayRemove
+  #  sort_title: zzzz_MovieDayRemove
     smart_label: random
     sync_mode: append
     plex_search:
