@@ -16,6 +16,7 @@ collections:
       all:
         year.gte: 1940
         label.not: MovieDayRemove
+      sort_by: random
     summary: Randomly picked and highly rated! Excludes the MCU, Harry Potter, X -Men, and so on. Also excludes movies that have prequels or sequels.
     visible_library: true
     visible_home: true
