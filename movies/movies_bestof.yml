@@ -19,7 +19,7 @@ collections:
       release.before: 2025-12-31
       adult: false
     summary: Top Rated Movies across the internet
-    #url_poster: https://github.com/arkyntech/pmm-configs/raw/main/images/Movies/movies_toprated_2023.jpg?raw=true
+    url_poster: https://github.com/arkyntech/pmm-configs/raw/main/images/Movies/movies_toprated_2023.jpg?raw=true
   Top Rated of 2024:
     template: { name: Chart, num: 1 }
     imdb_search:
@@ -30,7 +30,7 @@ collections:
       release.before: 2024-12-31
       adult: false
     summary: Top Rated Movies across the internet
-    #url_poster: https://github.com/arkyntech/pmm-configs/raw/main/images/Movies/movies_toprated_2023.jpg?raw=true
+    url_poster: https://github.com/arkyntech/pmm-configs/raw/main/images/Movies/movies_toprated_2023.jpg?raw=true
   Top Rated of 2023:
     template: { name: Chart, num: 1 }
     imdb_search:
