@@ -9,80 +9,48 @@ templates:
 collections:
   Apple TV+:
     template: {name: Networks}
-    imdb_search:
-      type: movie
-      sort_by: popularity.desc
-      company: co0397276
-      limit: 100
+    mdblist_list: https://mdblist.com/lists/k0meta/appletv-originals
     summary: A collection of Apple TV+ Original Content
     url_poster: https://github.com/arkyntech/pmm-configs/raw/main/images/Networks/network_appletv.jpg
 
   Disney Plus Originals:
     template: {name: Networks}
-    imdb_search:
-      type: movie
-      sort_by: popularity.desc
-      company: co0017902    # corrected: Walt Disney Pictures
-      limit: 100
+    mdblist_list: https://mdblist.com/lists/k0meta/disney-plus-originals
     summary: A collection of Disney Plus Original content
     url_poster: https://github.com/arkyntech/pmm-configs/raw/main/images/Networks/network_disney.jpg
 
   HBO Max Originals:
     template: {name: Networks}
-    imdb_search:
-      type: movie
-      sort_by: popularity.desc
-      company: co0098418    # corrected: HBO Films
-      limit: 100
+    mdblist_list: https://mdblist.com/lists/k0meta/max-originals
     summary: A collection of HBO Max Original content
     url_poster: https://github.com/arkyntech/pmm-configs/raw/main/images/Networks/network_hbo.jpg
 
   Hulu Originals:
     template: {name: Networks}
-    imdb_search:
-      type: movie
-      sort_by: popularity.desc
-      company: co0218858
-      limit: 100
+    mdblist_list: https://mdblist.com/lists/k0meta/hulu-originals
     summary: A collection of Hulu Original content
     url_poster: https://github.com/arkyntech/pmm-configs/raw/main/images/Networks/network_hulu.jpg
 
   Netflix Originals:
     template: {name: Networks}
-    imdb_search:
-      type: movie
-      sort_by: popularity.desc
-      company: co0144901
-      limit: 100
+    mdblist_list: https://mdblist.com/lists/k0meta/netflix-originals
     summary: A collection of Netflix Originals
     url_poster: https://github.com/arkyntech/pmm-configs/raw/main/images/Networks/network_netflix.jpg
 
   Peacock Originals:
     template: {name: Networks}
-    imdb_search:
-      type: movie
-      sort_by: popularity.desc
-      company: co0159111    # corrected: Universal Pictures (Peacock parent)
-      limit: 100
+    mdblist_list: https://mdblist.com/lists/hdlists/peacock-original-movies
     summary: A collection of Peacock Original content
     url_poster: https://github.com/arkyntech/pmm-configs/raw/main/images/Networks/network_peacock.jpg
 
   Prime Originals:
     template: {name: Networks}
-    imdb_search:
-      type: movie
-      sort_by: popularity.desc
-      company: co0319272
-      limit: 100
+    mdblist_list: https://mdblist.com/lists/k0meta/amazon-originals
     summary: A collection of Amazon Original content
     url_poster: https://github.com/arkyntech/pmm-configs/raw/main/images/Networks/network_prime.jpg
 
   Shudder:
     template: {name: Networks}
-    imdb_search:
-      type: movie
-      sort_by: popularity.desc
-      company: co0602021
-      limit: 100
+    mdblist_list: https://mdblist.com/lists/hdlists/shudder-original-movies
     summary: A collection of Shudder Exclusive & Original Content
     url_poster: https://github.com/arkyntech/pmm-configs/raw/main/images/Networks/network_shudder.jpg
