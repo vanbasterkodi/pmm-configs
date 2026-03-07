@@ -1,15 +1,4 @@
-######################################################
-#                 Awards Collections                 #
-######################################################
-templates:
-  Awards:
-    sort_title: +3_<<num>><<collection_name>>
-    sync_mode: sync
-    collection_mode: hide
-    collection_order: custom
-
-collections:
-  Oscar Winners:
+Oscar Winners:
     sort_title: +3_6Oscar Winners
     collection_mode: hide
     collection_order: custom
@@ -18,7 +7,7 @@ collections:
       type: movie
       event.winning: oscar
       sort_by: year.desc
-      event_year: 2000-current
+      release.after: 2000-01-01    # replaces unsupported event_year: 2000-current
       limit: 50
       adult: false
     summary: A collection of Oscar Winners
@@ -33,52 +22,8 @@ collections:
       type: movie
       event.nominated: oscar
       sort_by: year.desc
-      event_year: 2000-current
+      release.after: 2000-01-01    # replaces unsupported event_year: 2000-current
       limit: 50
       adult: false
     summary: A collection of Oscar Nominees
     url_poster: https://github.com/arkyntech/pmm-configs/blob/main/images/Movies/awards_oscarsawards_nominated.jpg?raw=true
-
-  Emmy Award Winners:
-    template: {name: Awards, num: 90}
-    imdb_search:
-      type: movie
-      event.winning: emmy
-      sort_by: year.desc
-      adult: false
-      limit: 50
-    summary: A collection of Emmy Award Winners
-    url_poster: https://github.com/arkyntech/pmm-configs/raw/main/images/Awards/awards_emmy_winners.jpg
-
-  Emmy Award Nominees:
-    template: {name: Awards, num: 91}
-    imdb_search:
-      type: movie
-      event.nominated: emmy      # fixed: was "event: emmy" which included winners too
-      sort_by: year.desc
-      adult: false
-      limit: 50
-    summary: A collection of Emmy Award Nominees
-    url_poster: https://github.com/arkyntech/pmm-configs/raw/main/images/Awards/awards_emmy_nominated.jpg
-
-  Golden Globes Winners:
-    template: {name: Awards, num: 92}
-    imdb_search:
-      type: movie
-      event.winning: golden
-      sort_by: year.desc
-      adult: false
-      limit: 50
-    summary: A collection of Golden Globes Winners
-    url_poster: https://github.com/arkyntech/pmm-configs/raw/main/images/Awards/awards_goldenglobes.jpg
-
-  Golden Globes Nominees:
-    template: {name: Awards, num: 93}
-    imdb_search:
-      type: movie
-      event.nominated: golden    # fixed: was "event: golden" which included winners too
-      sort_by: year.desc
-      adult: false
-      limit: 50
-    summary: A collection of Golden Globes Nominees
-    url_poster: https://github.com/arkyntech/pmm-configs/raw/main/images/Awards/awards_goldenglobes_nominated.jpg
