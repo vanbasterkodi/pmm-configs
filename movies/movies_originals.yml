@@ -1,4 +1,13 @@
-Apple TV+:
+templates:
+  Networks:
+    sort_title: +4_<<collection_name>>
+    sync_mode: sync
+    collection_mode: hide
+    collection_order: custom
+    cache_builders: 7
+
+collections:
+  Apple TV+:
     template: {name: Networks}
     imdb_search:
       type: movie
