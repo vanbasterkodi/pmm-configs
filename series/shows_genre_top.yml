@@ -3,189 +3,77 @@ templates:
     sort_title: +6_<<collection_name>>
     sync_mode: sync
     collection_mode: hide
-    collection_order: custom    
-    cache_builders: 1
+    collection_order: custom
+    cache_builders: 7
+    imdb_search:
+      type: tv_series
+      sort_by: vote_average.desc
+      genre: <<genre>>
+      votes.gte: 30000
+      limit: 150
+      adult: false
+    url_poster: https://github.com/arkyntech/pmm-configs/raw/main/images/Shows/tv_toprated_<<genre_slug>>.jpg
+
 ##########################################
-#              Top Rated                 #       
+#              Top Rated                 #
 ##########################################
 collections:
   Top Rated Action:
-    template: { name: TopRated }
-    imdb_search:
-      type: tv_series
-      sort_by: vote_average.desc
-      genre: action
-      votes.gte: 30000
-      adult: false
-    url_poster: https://github.com/arkyntech/pmm-configs/raw/main/images/Shows/tv_toprated_action.jpg?raw=true
+    template: { name: TopRated, genre: action, genre_slug: action }
+
   Top Rated Adventure:
-    template: { name: TopRated }
-    imdb_search:
-      type: tv_series
-      sort_by: vote_average.desc
-      genre: adventure
-      votes.gte: 30000
-      adult: false
-    url_poster: https://github.com/arkyntech/pmm-configs/raw/main/images/Shows/tv_toprated_adventure.jpg?raw=true
+    template: { name: TopRated, genre: adventure, genre_slug: adventure }
+
   Top Rated Animation:
-    template: { name: TopRated }
-    imdb_search:
-      type: tv_series
-      sort_by: vote_average.desc
-      genre: animation
-      votes.gte: 30000
-      adult: false
-    url_poster: https://github.com/arkyntech/pmm-configs/raw/main/images/Shows/tv_toprated_animation.jpg?raw=true
+    template: { name: TopRated, genre: animation, genre_slug: animation }
+
   Top Rated Biography:
-    template: { name: TopRated }
-    imdb_search:
-      type: tv_series
-      sort_by: vote_average.desc
-      genre: biography
-      votes.gte: 30000
-      adult: false
-    url_poster: https://github.com/arkyntech/pmm-configs/raw/main/images/Shows/tv_toprated_biography.jpg?raw=true
+    template: { name: TopRated, genre: biography, genre_slug: biography }
+
   Top Rated Comedy:
-    template: { name: TopRated }
-    imdb_search:
-      type: tv_series
-      sort_by: vote_average.desc
-      genre: comedy
-      votes.gte: 30000
-      adult: false
-    url_poster: https://github.com/arkyntech/pmm-configs/raw/main/images/Shows/tv_toprated_comedy.jpg?raw=true
+    template: { name: TopRated, genre: comedy, genre_slug: comedy }
+
   Top Rated Crime:
-    template: { name: TopRated }
-    imdb_search:
-      type: tv_series
-      sort_by: vote_average.desc
-      genre: crime
-      votes.gte: 30000
-      adult: false
-    url_poster: https://github.com/arkyntech/pmm-configs/raw/main/images/Shows/tv_toprated_crime.jpg?raw=true
+    template: { name: TopRated, genre: crime, genre_slug: crime }
+
   Top Rated Documentaries:
-    template: { name: TopRated }
-    imdb_search:
-      type: tv_series
-      sort_by: vote_average.desc
-      genre: documentary
-      votes.gte: 30000
-      adult: false
-    url_poster: https://github.com/arkyntech/pmm-configs/raw/main/images/Shows/tv_toprated_documentary.jpg?raw=true
+    template: { name: TopRated, genre: documentary, genre_slug: documentary }
+
   Top Rated Drama:
-    template: { name: TopRated }
-    imdb_search:
-      type: tv_series
-      sort_by: vote_average.desc
-      genre: drama
-      votes.gte: 30000
-      adult: false
-    url_poster: https://github.com/arkyntech/pmm-configs/raw/main/images/Shows/tv_toprated_drama.jpg?raw=true
+    template: { name: TopRated, genre: drama, genre_slug: drama }
+
   Top Rated Family:
-    template: { name: TopRated }
-    imdb_search:
-      type: tv_series
-      sort_by: vote_average.desc
-      genre: family
-      votes.gte: 30000
-      adult: false
-    url_poster: https://github.com/arkyntech/pmm-configs/raw/main/images/Shows/tv_toprated_family.jpg?raw=true
+    template: { name: TopRated, genre: family, genre_slug: family }
+
   Top Rated Fantasy:
-    template: { name: TopRated }
-    imdb_search:
-      type: tv_series
-      sort_by: vote_average.desc
-      genre: fantasy
-      votes.gte: 30000
-      adult: false
-    url_poster: https://github.com/arkyntech/pmm-configs/raw/main/images/Shows/tv_toprated_fantasy.jpg?raw=true
+    template: { name: TopRated, genre: fantasy, genre_slug: fantasy }
+
   Top Rated History:
-    template: { name: TopRated }
-    imdb_search:
-      type: tv_series
-      sort_by: vote_average.desc
-      genre: history
-      votes.gte: 30000
-      adult: false
-    url_poster: https://github.com/arkyntech/pmm-configs/raw/main/images/Shows/tv_toprated_history.jpg?raw=true
+    template: { name: TopRated, genre: history, genre_slug: history }
+
   Top Rated Horror:
-    template: { name: TopRated }
-    imdb_search:
-      type: tv_series
-      sort_by: vote_average.desc
-      genre: horror
-      votes.gte: 30000
-      adult: false
-    url_poster: https://github.com/arkyntech/pmm-configs/raw/main/images/Shows/tv_toprated_horror.jpg?raw=true
+    template: { name: TopRated, genre: horror, genre_slug: horror }
+
   Top Rated Music:
-    template: { name: TopRated }
-    imdb_search:
-      type: tv_series
-      sort_by: vote_average.desc
-      genre: music
-      votes.gte: 30000
-      adult: false
-    url_poster: https://github.com/arkyntech/pmm-configs/raw/main/images/Shows/tv_toprated_music.jpg?raw=true
+    template: { name: TopRated, genre: music, genre_slug: music }
+
   Top Rated Musicals:
-    template: { name: TopRated }
-    imdb_search:
-      type: tv_series
-      sort_by: vote_average.desc
-      genre: musical
-      votes.gte: 30000
-      adult: false
-    url_poster: https://github.com/arkyntech/pmm-configs/raw/main/images/Shows/tv_toprated_musicals.jpg?raw=true
+    template: { name: TopRated, genre: musical, genre_slug: musicals }
+
   Top Rated Mystery:
-    template: { name: TopRated }
-    imdb_search:
-      type: tv_series
-      sort_by: vote_average.desc
-      genre: mystery
-      votes.gte: 30000
-      adult: false
-    url_poster: https://github.com/arkyntech/pmm-configs/raw/main/images/Shows/tv_toprated_mystery.jpg?raw=true
+    template: { name: TopRated, genre: mystery, genre_slug: mystery }
+
   Top Rated Romance:
-    template: { name: TopRated }
-    imdb_search:
-      type: tv_series
-      sort_by: vote_average.desc
-      genre: romance
-      votes.gte: 30000
-      adult: false
-    url_poster: https://github.com/arkyntech/pmm-configs/raw/main/images/Shows/tv_toprated_romance.jpg?raw=true
+    template: { name: TopRated, genre: romance, genre_slug: romance }
+
   Top Rated Sci-Fi:
-    template: { name: TopRated }
-    imdb_search:
-      type: tv_series
-      sort_by: vote_average.desc
-      genre: sci-fi
-      votes.gte: 30000
-      adult: false
-    url_poster: https://github.com/arkyntech/pmm-configs/raw/main/images/Shows/tv_toprated_scifi.jpg?raw=true
+    template: { name: TopRated, genre: sci-fi, genre_slug: scifi }
+
   Top Rated Thriller:
-    template: { name: TopRated }
-    imdb_search:
-      type: tv_series
-      sort_by: vote_average.desc
-      genre: thriller
-      votes.gte: 30000
-      adult: false
-    url_poster: https://github.com/arkyntech/pmm-configs/raw/main/images/Shows/tv_toprated_thriller.jpg?raw=true
+    template: { name: TopRated, genre: thriller, genre_slug: thriller }
+
   Top Rated War:
-    template: { name: TopRated }
-    imdb_search:
-      type: tv_series
-      sort_by: vote_average.desc
-      genre: war
-      votes.gte: 30000
-      adult: false
-    url_poster: https://github.com/arkyntech/pmm-configs/raw/main/images/Shows/tv_toprated_war.jpg?raw=true
+    template: { name: TopRated, genre: war, genre_slug: war }
+
   Top Rated Western:
-    template: { name: TopRated }
-    imdb_search:
-      type: tv_series
-      sort_by: vote_average.desc
-      genre: western
-      votes.gte: 30000
-      adult: false
-    url_poster: https://github.com/arkyntech/pmm-configs/raw/main/images/Shows/tv_toprated_western.jpg?raw=true
+    template: { name: TopRated, genre: western, genre_slug: western }
