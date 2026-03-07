@@ -1,27 +1,27 @@
-templates:
-  Networks:
-    sort_title: +4_<<collection_name>>
-    sync_mode: sync
-    collection_mode: hide
-    collection_order: custom
-    cache_builders: 7
-
-collections:
-  Apple TV+:
+Apple TV+:
     template: {name: Networks}
-    imdb_list: ls093244821
+    imdb_search:
+      type: movie
+      sort_by: popularity.desc
+      company: co0397276
     summary: A collection of Apple TV+ Original Content
     url_poster: https://github.com/arkyntech/pmm-configs/raw/main/images/Networks/network_appletv.jpg
 
   Disney Plus Originals:
     template: {name: Networks}
-    imdb_list: ls095817432
+    imdb_search:
+      type: movie
+      sort_by: popularity.desc
+      company: co0748692
     summary: A collection of Disney Plus Original content
     url_poster: https://github.com/arkyntech/pmm-configs/raw/main/images/Networks/network_disney.jpg
 
   HBO Max Originals:
     template: {name: Networks}
-    imdb_list: ls099598259
+    imdb_search:
+      type: movie
+      sort_by: popularity.desc
+      company: co0749748
     summary: A collection of HBO Max Original content
     url_poster: https://github.com/arkyntech/pmm-configs/raw/main/images/Networks/network_hbo.jpg
 
@@ -48,7 +48,7 @@ collections:
     imdb_search:
       type: movie
       sort_by: popularity.desc
-      company: co0749786
+      company: co0683916
     summary: A collection of Peacock Original content
     url_poster: https://github.com/arkyntech/pmm-configs/raw/main/images/Networks/network_peacock.jpg
 
