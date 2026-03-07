@@ -1,5 +1,5 @@
 ######################################################
-#                BAFTA Collections                   #
+#                 Awards Collections                 #
 ######################################################
 templates:
   Awards:
@@ -7,14 +7,14 @@ templates:
     sync_mode: sync
     collection_mode: hide
     collection_order: custom
+
 collections:
   Oscar Winners:
     sort_title: +3_6Oscar Winners
     collection_mode: hide
     collection_order: custom
-    imdb_award:
-      event_id: ev0000003
-      winning: true
+    sync_mode: sync
+    imdb_search:
       type: movie
       event.winning: oscar
       sort_by: year.desc
@@ -23,23 +23,24 @@ collections:
       adult: false
     summary: A collection of Oscar Winners
     url_poster: https://github.com/arkyntech/pmm-configs/blob/main/images/Movies/awards_oscarsawards.jpg?raw=true
+
   Oscar Nominees:
     sort_title: +3_7Oscar Nominees
     collection_mode: hide
     collection_order: custom
-    imdb_award:
-      event_id: ev0000003
-      winning: false
+    sync_mode: sync
+    imdb_search:
       type: movie
-      event.winning: oscar
+      event.nominated: oscar
       sort_by: year.desc
       event_year: 2000-current
       limit: 50
       adult: false
     summary: A collection of Oscar Nominees
     url_poster: https://github.com/arkyntech/pmm-configs/blob/main/images/Movies/awards_oscarsawards_nominated.jpg?raw=true
+
   Emmy Award Winners:
-    template: {name: Awards, num: 90 }
+    template: {name: Awards, num: 90}
     imdb_search:
       type: movie
       event.winning: emmy
@@ -47,19 +48,21 @@ collections:
       adult: false
       limit: 50
     summary: A collection of Emmy Award Winners
-    url_poster: https://github.com/arkyntech/pmm-configs/raw/main/images/Awards/awards_emmy_winners.jpg  
+    url_poster: https://github.com/arkyntech/pmm-configs/raw/main/images/Awards/awards_emmy_winners.jpg
+
   Emmy Award Nominees:
-    template: {name: Awards, num: 91 }
+    template: {name: Awards, num: 91}
     imdb_search:
       type: movie
-      event: emmy
+      event.nominated: emmy      # fixed: was "event: emmy" which included winners too
       sort_by: year.desc
       adult: false
       limit: 50
-    summary: A collection of Emmy Awards Nominees
+    summary: A collection of Emmy Award Nominees
     url_poster: https://github.com/arkyntech/pmm-configs/raw/main/images/Awards/awards_emmy_nominated.jpg
+
   Golden Globes Winners:
-    template: {name: Awards, num: 92 }
+    template: {name: Awards, num: 92}
     imdb_search:
       type: movie
       event.winning: golden
@@ -67,14 +70,15 @@ collections:
       adult: false
       limit: 50
     summary: A collection of Golden Globes Winners
-    url_poster: https://github.com/arkyntech/pmm-configs/raw/main/images/Awards/awards_goldenglobes.jpg    
+    url_poster: https://github.com/arkyntech/pmm-configs/raw/main/images/Awards/awards_goldenglobes.jpg
+
   Golden Globes Nominees:
-    template: {name: Awards, num: 93 }
+    template: {name: Awards, num: 93}
     imdb_search:
       type: movie
-      event: golden
+      event.nominated: golden    # fixed: was "event: golden" which included winners too
       sort_by: year.desc
       adult: false
       limit: 50
     summary: A collection of Golden Globes Nominees
-    url_poster: https://github.com/arkyntech/pmm-configs/raw/main/images/Awards/awards_goldenglobes_nominated.jpg        
+    url_poster: https://github.com/arkyntech/pmm-configs/raw/main/images/Awards/awards_goldenglobes_nominated.jpg
