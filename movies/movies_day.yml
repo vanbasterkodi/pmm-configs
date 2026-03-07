@@ -13,6 +13,6 @@ collections:
     visible_home: true
     visible_shared: true
 
-  MovieDayRemove:
-    build_collection: false
-    plex_all: true
+  #MovieDayRemove:
+  #  build_collection: false
+   # plex_all: true
