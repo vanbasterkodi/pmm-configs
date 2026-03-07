@@ -23,12 +23,7 @@ collections:
 
   Emmy Award Nominees:
     template: {name: Awards, num: 7}
-    imdb_search:
-      type: tv_series
-      event.nominated: emmy          # fixed: was "event: emmy" which included winners too
-      sort_by: year.desc
-      limit: 50
-      adult: false
+    imdb_list: https://www.imdb.com/search/title/?groups=emmy_nominee&title_type=tv_series&sort=year,desc&count=100
     summary: A collection of Emmy Award Nominees
     url_poster: https://github.com/arkyntech/pmm-configs/raw/main/images/Shows/awards_emmy_nominated.jpg
 
@@ -45,11 +40,6 @@ collections:
 
   Golden Globes Nominees:
     template: {name: Awards, num: 9}
-    imdb_search:
-      type: tv_series
-      event.nominated: golden        # fixed: was "event: golden" which included winners too
-      sort_by: year.desc
-      limit: 50
-      adult: false
+    imdb_list: https://www.imdb.com/search/title/?groups=golden_globe_nominee&title_type=tv_series&sort=year,desc&count=100
     summary: A collection of Golden Globes Nominees
     url_poster: https://github.com/arkyntech/pmm-configs/raw/main/images/Shows/awards_goldenglobes_nominated_tv.jpg
