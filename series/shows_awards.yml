@@ -1,5 +1,5 @@
 ######################################################
-#                BAFTA Collections                   #
+#                Awards Collections                  #
 ######################################################
 templates:
   Awards:
@@ -8,40 +8,48 @@ templates:
     collection_mode: hide
     collection_order: custom
     cache_builders: 7
+
 collections:
   Emmy Award Winners:
-    template: {name: Awards, num: 6 }
+    template: {name: Awards, num: 6}
     imdb_search:
       type: tv_series
       event.winning: emmy
       sort_by: year.desc
+      limit: 50
       adult: false
     summary: A collection of Emmy Award Winners
-    url_poster: https://github.com/arkyntech/pmm-configs/raw/main/images/Shows/awards_emmy_winners.jpg  
+    url_poster: https://github.com/arkyntech/pmm-configs/raw/main/images/Shows/awards_emmy_winners.jpg
+
   Emmy Award Nominees:
-    template: {name: Awards, num: 7 }
+    template: {name: Awards, num: 7}
     imdb_search:
       type: tv_series
-      event: emmy
+      event.nominated: emmy          # fixed: was "event: emmy" which included winners too
       sort_by: year.desc
+      limit: 50
       adult: false
-    summary: A collection of Emmy Awards Nominees
+    summary: A collection of Emmy Award Nominees
     url_poster: https://github.com/arkyntech/pmm-configs/raw/main/images/Shows/awards_emmy_nominated.jpg
+
   Golden Globes Winners:
-    template: {name: Awards, num: 8 }
+    template: {name: Awards, num: 8}
     imdb_search:
       type: tv_series
       event.winning: golden
       sort_by: year.desc
+      limit: 50
       adult: false
-    summary: A selection of Golden Globes Winners
-    url_poster: https://github.com/arkyntech/pmm-configs/raw/main/images/Shows/awards_goldenglobes_tv.jpg    
+    summary: A collection of Golden Globes Winners
+    url_poster: https://github.com/arkyntech/pmm-configs/raw/main/images/Shows/awards_goldenglobes_tv.jpg
+
   Golden Globes Nominees:
-    template: {name: Awards, num: 9 }
+    template: {name: Awards, num: 9}
     imdb_search:
       type: tv_series
-      event: golden
+      event.nominated: golden        # fixed: was "event: golden" which included winners too
       sort_by: year.desc
+      limit: 50
       adult: false
     summary: A collection of Golden Globes Nominees
-    url_poster: https://github.com/arkyntech/pmm-configs/raw/main/images/Shows/awards_goldenglobes_nominated_tv.jpg        
+    url_poster: https://github.com/arkyntech/pmm-configs/raw/main/images/Shows/awards_goldenglobes_nominated_tv.jpg
