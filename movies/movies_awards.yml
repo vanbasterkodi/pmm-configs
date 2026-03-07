@@ -11,11 +11,7 @@ templates:
 
 collections:
   Oscar Winners:
-    sort_title: +3_6Oscar Winners
-    collection_mode: hide
-    collection_order: custom
-    sync_mode: sync
-    cache_builders: 7
+    template: {name: Awards, num: 6}
     imdb_search:
       type: movie
       event.winning: oscar
@@ -24,23 +20,13 @@ collections:
       limit: 100
       adult: false
     summary: A collection of Oscar Winners
-    url_poster: https://github.com/arkyntech/pmm-configs/blob/main/images/Movies/awards_oscarsawards.jpg?raw=true
+    url_poster: https://github.com/arkyntech/pmm-configs/raw/main/images/Movies/awards_oscarsawards.jpg
 
   Oscar Nominees:
-    sort_title: +3_7Oscar Nominees
-    collection_mode: hide
-    collection_order: custom
-    sync_mode: sync
-    cache_builders: 7
-    imdb_search:
-      type: movie
-      event.nominated: oscar
-      sort_by: year.desc
-      release.after: 2000-01-01
-      limit: 100
-      adult: false
+    template: {name: Awards, num: 7}
+    imdb_list: https://www.imdb.com/search/title/?groups=oscar_nominee&title_type=feature&sort=year,desc&count=100
     summary: A collection of Oscar Nominees
-    url_poster: https://github.com/arkyntech/pmm-configs/blob/main/images/Movies/awards_oscarsawards_nominated.jpg?raw=true
+    url_poster: https://github.com/arkyntech/pmm-configs/raw/main/images/Movies/awards_oscarsawards_nominated.jpg
 
   Emmy Award Winners:
     template: {name: Awards, num: 90}
@@ -55,12 +41,7 @@ collections:
 
   Emmy Award Nominees:
     template: {name: Awards, num: 91}
-    imdb_search:
-      type: movie
-      event.nominated: emmy
-      sort_by: year.desc
-      limit: 100
-      adult: false
+    imdb_list: https://www.imdb.com/search/title/?groups=emmy_nominee&title_type=feature&sort=year,desc&count=100
     summary: A collection of Emmy Award Nominees
     url_poster: https://github.com/arkyntech/pmm-configs/raw/main/images/Awards/awards_emmy_nominated.jpg
 
@@ -77,11 +58,6 @@ collections:
 
   Golden Globes Nominees:
     template: {name: Awards, num: 93}
-    imdb_search:
-      type: movie
-      event.nominated: golden
-      sort_by: year.desc
-      limit: 100
-      adult: false
+    imdb_list: https://www.imdb.com/search/title/?groups=golden_globe_nominee&title_type=feature&sort=year,desc&count=100
     summary: A collection of Golden Globes Nominees
     url_poster: https://github.com/arkyntech/pmm-configs/raw/main/images/Awards/awards_goldenglobes_nominated.jpg
