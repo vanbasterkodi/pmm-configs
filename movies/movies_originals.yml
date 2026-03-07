@@ -9,19 +9,19 @@ templates:
 collections:
   Apple TV+:
     template: {name: Networks}
-    tmdb_network: 2552
+    imdb_list: https://www.imdb.com/list/ls093244821/?sort=moviemeter,asc&title_type=movie
     summary: A collection of Apple TV+ Original Content
     url_poster: https://github.com/arkyntech/pmm-configs/raw/main/images/Networks/network_appletv.jpg
 
   Disney Plus Originals:
     template: {name: Networks}
-    tmdb_network: 2739
+    imdb_list: https://www.imdb.com/list/ls095817432/?sort=moviemeter,asc&title_type=movie
     summary: A collection of Disney Plus Original content
     url_poster: https://github.com/arkyntech/pmm-configs/raw/main/images/Networks/network_disney.jpg
 
   HBO Max Originals:
     template: {name: Networks}
-    tmdb_network: 49
+    imdb_list: https://www.imdb.com/list/ls099598259/?sort=moviemeter,asc&title_type=movie
     summary: A collection of HBO Max Original content
     url_poster: https://github.com/arkyntech/pmm-configs/raw/main/images/Networks/network_hbo.jpg
 
@@ -29,26 +29,35 @@ collections:
     template: {name: Networks}
     imdb_search:
       type: movie
-      sort_by: popularity.desc        # fixed: was .asc (least popular first)
+      sort_by: popularity.desc
       company: co0218858
     summary: A collection of Hulu Original content
     url_poster: https://github.com/arkyntech/pmm-configs/raw/main/images/Networks/network_hulu.jpg
 
   Netflix Originals:
     template: {name: Networks}
-    tmdb_network: 213
+    imdb_search:
+      type: movie
+      sort_by: popularity.desc
+      company: co0144901
     summary: A collection of Netflix Originals
     url_poster: https://github.com/arkyntech/pmm-configs/raw/main/images/Networks/network_netflix.jpg
 
   Peacock Originals:
     template: {name: Networks}
-    tmdb_network: 3353
+    imdb_search:
+      type: movie
+      sort_by: popularity.desc
+      company: co0749786
     summary: A collection of Peacock Original content
     url_poster: https://github.com/arkyntech/pmm-configs/raw/main/images/Networks/network_peacock.jpg
 
   Prime Originals:
     template: {name: Networks}
-    tmdb_network: 1024
+    imdb_search:
+      type: movie
+      sort_by: popularity.desc
+      company: co0319272
     summary: A collection of Amazon Original content
     url_poster: https://github.com/arkyntech/pmm-configs/raw/main/images/Networks/network_prime.jpg
 
@@ -56,7 +65,7 @@ collections:
     template: {name: Networks}
     imdb_search:
       type: movie
-      sort_by: popularity.desc        # fixed: was .asc (least popular first)
+      sort_by: popularity.desc
       company: co0602021
     summary: A collection of Shudder Exclusive & Original Content
     url_poster: https://github.com/arkyntech/pmm-configs/raw/main/images/Networks/network_shudder.jpg
