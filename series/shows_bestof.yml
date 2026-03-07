@@ -7,65 +7,46 @@ templates:
     sync_mode: sync
     collection_order: custom
     cache_builders: 7
+
+  TopRatedYear:
+    sort_title: +2_<<num>><<collection_name>>
+    sync_mode: sync
+    collection_order: custom
+    cache_builders: <<cache>>
+    imdb_search:
+      type: tv_series
+      sort_by: rating.desc
+      votes.gte: 10000
+      release.after: <<year>>-01-01
+      release.before: <<year>>-12-31
+      adult: false
+    summary: Top Rated Series of <<year>>
+    url_poster: https://github.com/arkyntech/pmm-configs/raw/main/images/Shows/tv_toprated_<<year>>.jpg
+
 collections:
-### CHARTS ###
   Top Rated of All Time:
     template: { name: Chart, num: 1 }
-    imdb_chart: top_shows
+    tmdb_top_rated: 50
     summary: Top Rated Series of All Time
-    url_poster: https://github.com/arkyntech/pmm-configs/raw/main/images/Shows/tv_toprated.jpg 
+    url_poster: https://github.com/arkyntech/pmm-configs/raw/main/images/Shows/tv_toprated.jpg
+
+  Top Rated of 2025:
+    template: { name: TopRatedYear, num: 2, year: 2025, cache: 1 }
+
+  Top Rated of 2024:
+    template: { name: TopRatedYear, num: 3, year: 2024, cache: 7 }
+
   Top Rated of 2023:
-    template: { name: Chart, num: 2 }
-    imdb_search:
-      type: tv_series
-      sort_by: rating.desc
-      votes.gte: 10000
-      release.after: 2023-01-01
-      release.before: 2023-12-31
-      adult: false
-    summary: Top Rated Series of 2023
-    url_poster: https://github.com/arkyntech/pmm-configs/raw/main/images/Shows/tv_toprated_2023.jpg
+    template: { name: TopRatedYear, num: 4, year: 2023, cache: 30 }
+
   Top Rated of 2022:
-    template: { name: Chart, num: 3 }
-    imdb_search:
-      type: tv_series
-      sort_by: rating.desc
-      votes.gte: 10000
-      release.after: 2022-01-01
-      release.before: 2022-12-31
-      adult: false
-    summary: Top Rated Series of 2022
-    url_poster: https://github.com/arkyntech/pmm-configs/raw/main/images/Shows/tv_toprated_2022.jpg
+    template: { name: TopRatedYear, num: 5, year: 2022, cache: 30 }
+
   Top Rated of 2021:
-    template: { name: Chart, num: 4 }
-    imdb_search:
-      type: tv_series
-      sort_by: rating.asc
-      votes.gte: 10000
-      release.after: 2021-01-01
-      release.before: 2021-12-31
-      adult: false
-    summary: Top Rated Series of 201
-    url_poster: https://github.com/arkyntech/pmm-configs/raw/main/images/Shows/tv_toprated_2021.jpg
+    template: { name: TopRatedYear, num: 6, year: 2021, cache: 30 }  # fixed: was rating.asc
+
   Top Rated of 2020:
-    template: { name: Chart, num: 5 }
-    imdb_search:
-      type: tv_series
-      sort_by: rating.asc
-      votes.gte: 10000
-      release.after: 2020-01-01
-      release.before: 2020-12-31
-      adult: false
-    summary: Top Rated Series of 2020
-    url_poster: https://github.com/arkyntech/pmm-configs/raw/main/images/Shows/tv_toprated_2020.jpg
+    template: { name: TopRatedYear, num: 7, year: 2020, cache: 30 }  # fixed: was rating.asc
+
   Top Rated of 2019:
-    template: { name: Chart, num: 6 }
-    imdb_search:
-      type: tv_series
-      sort_by: rating.asc
-      votes.gte: 10000
-      release.after: 2019-01-01
-      release.before: 2019-12-31
-      adult: false
-    summary: Top Rated Series of 2019
-    url_poster: https://github.com/arkyntech/pmm-configs/raw/main/images/Shows/tv_toprated_2019.jpg
+    template: { name: TopRatedYear, num: 8, year: 2019, cache: 30 }  # fixed: was rating.asc
