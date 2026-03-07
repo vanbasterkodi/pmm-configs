@@ -9,19 +9,19 @@ templates:
 collections:
   Apple TV+:
     template: {name: Networks}
-    imdb_list: https://www.imdb.com/list/ls093244821/?sort=moviemeter,asc&title_type=movie
+    imdb_list: ls093244821
     summary: A collection of Apple TV+ Original Content
     url_poster: https://github.com/arkyntech/pmm-configs/raw/main/images/Networks/network_appletv.jpg
 
   Disney Plus Originals:
     template: {name: Networks}
-    imdb_list: https://www.imdb.com/list/ls095817432/?sort=moviemeter,asc&title_type=movie
+    imdb_list: ls095817432
     summary: A collection of Disney Plus Original content
     url_poster: https://github.com/arkyntech/pmm-configs/raw/main/images/Networks/network_disney.jpg
 
   HBO Max Originals:
     template: {name: Networks}
-    imdb_list: https://www.imdb.com/list/ls099598259/?sort=moviemeter,asc&title_type=movie
+    imdb_list: ls099598259
     summary: A collection of HBO Max Original content
     url_poster: https://github.com/arkyntech/pmm-configs/raw/main/images/Networks/network_hbo.jpg
 
