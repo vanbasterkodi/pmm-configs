@@ -1,34 +1,18 @@
 collections:
-
-  #Made by overlords
-
-  #Remove Label:
-    #build_collection: false
-      #plex_all: true # or whatever kinda of search you want
-      #label.remove: MovieDayRemove
-
   Movies of the Day:
-  #  sort_title: zzzz_MoviesDay
-    smart_label: random
     sync_mode: sync
+    collection_order: random
     plex_search:
-      limit: 2
+      limit: 5
       all:
         year.gte: 1940
-        label.not: MovieDayRemove
+        audience_rating.gte: 6.5
       sort_by: random
-    summary: Randomly picked and highly rated! Excludes the MCU, Harry Potter, X -Men, and so on. Also excludes movies that have prequels or sequels.
+    summary: Randomly picked highly rated movies. Refreshes each run.
     visible_library: true
     visible_home: true
     visible_shared: true
 
   MovieDayRemove:
-  #  sort_title: zzzz_MovieDayRemove
-    smart_label: random
-    sync_mode: append
-    plex_search:
-      limit: 25000
-      all:
-        year.gte: 1940
-        label: Movies of the Day
-    summary: Movies featured on "Movie of The Day" collection will be put into this collection to not be considered again.
+    build_collection: false
+    plex_all: true
