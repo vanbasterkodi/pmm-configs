@@ -15,13 +15,13 @@ collections:
 
   Disney Plus Originals:
     template: {name: Networks}
-    mdblist_list: https://mdblist.com/lists/k0meta/disney-plus-originals
+    mdblist_list: https://mdblist.com/lists/k0meta/disney-originals
     summary: A collection of Disney Plus Original content
     url_poster: https://github.com/arkyntech/pmm-configs/raw/main/images/Networks/network_disney.jpg
 
   HBO Max Originals:
     template: {name: Networks}
-    mdblist_list: https://mdblist.com/lists/k0meta/max-originals
+    mdblist_list: https://mdblist.com/lists/k0meta/hbomax-originals
     summary: A collection of HBO Max Original content
     url_poster: https://github.com/arkyntech/pmm-configs/raw/main/images/Networks/network_hbo.jpg
 
@@ -39,7 +39,7 @@ collections:
 
   Peacock Originals:
     template: {name: Networks}
-    mdblist_list: https://mdblist.com/lists/hdlists/peacock-original-movies
+    mdblist_list: https://mdblist.com/lists/k0meta/peacock-originals
     summary: A collection of Peacock Original content
     url_poster: https://github.com/arkyntech/pmm-configs/raw/main/images/Networks/network_peacock.jpg
 
@@ -51,6 +51,10 @@ collections:
 
   Shudder:
     template: {name: Networks}
-    mdblist_list: https://mdblist.com/lists/hdlists/shudder-original-movies
+    imdb_search:
+      type: movie
+      sort_by: popularity.desc
+      company: co0602021
+      limit: 100
     summary: A collection of Shudder Exclusive & Original Content
     url_poster: https://github.com/arkyntech/pmm-configs/raw/main/images/Networks/network_shudder.jpg
