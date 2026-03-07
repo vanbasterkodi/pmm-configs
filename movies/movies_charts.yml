@@ -11,24 +11,24 @@ templates:
 collections:
   Popular Movies:
     template: { name: Chart, num: 1 }
-    tmdb_popular: 50
+    tmdb_popular: 100
     summary: Popular Movies across the internet
     url_poster: https://github.com/arkyntech/pmm-configs/raw/main/images/Movies/movies_popular.jpg
 
   Most Watched Daily:
     template: { name: Chart, num: 2 }
-    tmdb_trending_daily: 50
+    tmdb_trending_daily: 100
     summary: Movies trending daily across the internet
     url_poster: https://github.com/arkyntech/pmm-configs/raw/main/images/Misc/watched_movies_daily.jpg
 
   Most Watched Weekly:
     template: { name: Chart, num: 3 }
-    tmdb_trending_weekly: 50
+    tmdb_trending_weekly: 100
     summary: Movies trending weekly across the internet
     url_poster: https://github.com/arkyntech/pmm-configs/raw/main/images/Misc/watched_movies_weekly.jpg
 
   Top Rated Movies:
     template: { name: Chart, num: 8 }
-    tmdb_top_rated: 50
+    tmdb_top_rated: 100
     summary: Top Rated Movies across the internet
     url_poster: https://github.com/arkyntech/pmm-configs/raw/main/images/Movies/movies_toprated.jpg
