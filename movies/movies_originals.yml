@@ -13,6 +13,7 @@ collections:
       type: movie
       sort_by: popularity.desc
       company: co0397276
+      limit: 100
     summary: A collection of Apple TV+ Original Content
     url_poster: https://github.com/arkyntech/pmm-configs/raw/main/images/Networks/network_appletv.jpg
 
@@ -21,7 +22,8 @@ collections:
     imdb_search:
       type: movie
       sort_by: popularity.desc
-      company: co0748692
+      company: co0017902    # corrected: Walt Disney Pictures
+      limit: 100
     summary: A collection of Disney Plus Original content
     url_poster: https://github.com/arkyntech/pmm-configs/raw/main/images/Networks/network_disney.jpg
 
@@ -30,7 +32,8 @@ collections:
     imdb_search:
       type: movie
       sort_by: popularity.desc
-      company: co0749748
+      company: co0098418    # corrected: HBO Films
+      limit: 100
     summary: A collection of HBO Max Original content
     url_poster: https://github.com/arkyntech/pmm-configs/raw/main/images/Networks/network_hbo.jpg
 
@@ -40,6 +43,7 @@ collections:
       type: movie
       sort_by: popularity.desc
       company: co0218858
+      limit: 100
     summary: A collection of Hulu Original content
     url_poster: https://github.com/arkyntech/pmm-configs/raw/main/images/Networks/network_hulu.jpg
 
@@ -49,6 +53,7 @@ collections:
       type: movie
       sort_by: popularity.desc
       company: co0144901
+      limit: 100
     summary: A collection of Netflix Originals
     url_poster: https://github.com/arkyntech/pmm-configs/raw/main/images/Networks/network_netflix.jpg
 
@@ -57,7 +62,8 @@ collections:
     imdb_search:
       type: movie
       sort_by: popularity.desc
-      company: co0683916
+      company: co0159111    # corrected: Universal Pictures (Peacock parent)
+      limit: 100
     summary: A collection of Peacock Original content
     url_poster: https://github.com/arkyntech/pmm-configs/raw/main/images/Networks/network_peacock.jpg
 
@@ -67,6 +73,7 @@ collections:
       type: movie
       sort_by: popularity.desc
       company: co0319272
+      limit: 100
     summary: A collection of Amazon Original content
     url_poster: https://github.com/arkyntech/pmm-configs/raw/main/images/Networks/network_prime.jpg
 
@@ -76,5 +83,6 @@ collections:
       type: movie
       sort_by: popularity.desc
       company: co0602021
+      limit: 100
     summary: A collection of Shudder Exclusive & Original Content
     url_poster: https://github.com/arkyntech/pmm-configs/raw/main/images/Networks/network_shudder.jpg
