@@ -8,7 +8,7 @@ Oscar Winners:
       event.winning: oscar
       sort_by: year.desc
       release.after: 2000-01-01    # replaces unsupported event_year: 2000-current
-      limit: 50
+      limit: 100
       adult: false
     summary: A collection of Oscar Winners
     url_poster: https://github.com/arkyntech/pmm-configs/blob/main/images/Movies/awards_oscarsawards.jpg?raw=true
@@ -23,7 +23,7 @@ Oscar Winners:
       event.nominated: oscar
       sort_by: year.desc
       release.after: 2000-01-01    # replaces unsupported event_year: 2000-current
-      limit: 50
+      limit: 100
       adult: false
     summary: A collection of Oscar Nominees
     url_poster: https://github.com/arkyntech/pmm-configs/blob/main/images/Movies/awards_oscarsawards_nominated.jpg?raw=true
