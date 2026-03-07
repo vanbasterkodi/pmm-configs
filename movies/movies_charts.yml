@@ -6,25 +6,29 @@ templates:
     sort_title: +1_<<num>><<collection_name>>
     sync_mode: sync
     collection_order: custom
-    cache_builders: 1
+    cache_builders: 7
+
 collections:
-### CHARTS ###
   Popular Movies:
     template: { name: Chart, num: 1 }
-    imdb_chart: popular_movies
+    tmdb_popular: 50
     summary: Popular Movies across the internet
-    url_poster: https://github.com/arkyntech/pmm-configs/raw/main/images/Movies/movies_popular.jpg?raw=true
+    url_poster: https://github.com/arkyntech/pmm-configs/raw/main/images/Movies/movies_popular.jpg
+
   Most Watched Daily:
     template: { name: Chart, num: 2 }
     tmdb_trending_daily: 50
-    url_poster: https://github.com/arkyntech/pmm-configs/raw/main/images/Misc/watched_movies_daily.jpg?raw=true
+    summary: Movies trending daily across the internet
+    url_poster: https://github.com/arkyntech/pmm-configs/raw/main/images/Misc/watched_movies_daily.jpg
+
   Most Watched Weekly:
     template: { name: Chart, num: 3 }
     tmdb_trending_weekly: 50
-    summary: Movies Trending across the internet
-    url_poster: https://github.com/arkyntech/pmm-configs/raw/main/images/Misc/watched_movies_weekly.jpg?raw=true
+    summary: Movies trending weekly across the internet
+    url_poster: https://github.com/arkyntech/pmm-configs/raw/main/images/Misc/watched_movies_weekly.jpg
+
   Top Rated Movies:
     template: { name: Chart, num: 8 }
-    imdb_chart: top_movies
+    tmdb_top_rated: 50
     summary: Top Rated Movies across the internet
-    url_poster: https://github.com/arkyntech/pmm-configs/raw/main/images/Movies/movies_toprated.jpg?raw=true
+    url_poster: https://github.com/arkyntech/pmm-configs/raw/main/images/Movies/movies_toprated.jpg
