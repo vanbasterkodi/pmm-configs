@@ -12,8 +12,12 @@ collections:
     template: { name: Originals }
     smart_filter:
       sort_by: originally_available.desc
-      all:
+      validate: false
+      any:
+        network: Amazon Prime Video
+        network: Prime Video
         network: Amazon
+        network: Amazon Studios
     summary: A collection of Amazon content
     url_poster: https://github.com/arkyntech/pmm-configs/raw/main/images/Networks/network_prime.jpg
 
@@ -21,8 +25,10 @@ collections:
     template: { name: Originals }
     smart_filter:
       sort_by: originally_available.desc
-      all:
+      validate: false
+      any:
         network: Apple TV+
+        network: Apple TV
     summary: A collection of Apple TV+ content
     url_poster: https://github.com/arkyntech/pmm-configs/raw/main/images/Networks/network_appletv.jpg
 
@@ -30,8 +36,10 @@ collections:
     template: { name: Originals }
     smart_filter:
       sort_by: originally_available.desc
-      all:
+      validate: false
+      any:
         network: Disney+
+        network: Disney Plus
     summary: A collection of Disney Plus content
     url_poster: https://github.com/arkyntech/pmm-configs/raw/main/images/Networks/network_disney.jpg
 
@@ -39,8 +47,11 @@ collections:
     template: { name: Originals }
     smart_filter:
       sort_by: originally_available.desc
-      all:
+      validate: false
+      any:
         network: Max
+        network: HBO Max
+        network: HBO
     summary: A collection of HBO Max Originals
     url_poster: https://github.com/arkyntech/pmm-configs/raw/main/images/Networks/network_hbo.jpg
 
@@ -48,7 +59,8 @@ collections:
     template: { name: Originals }
     smart_filter:
       sort_by: originally_available.desc
-      all:
+      validate: false
+      any:
         network: Hulu
     summary: A collection of Hulu content
     url_poster: https://github.com/arkyntech/pmm-configs/raw/main/images/Networks/network_hulu.jpg
@@ -57,7 +69,8 @@ collections:
     template: { name: Originals }
     smart_filter:
       sort_by: originally_available.desc
-      all:
+      validate: false
+      any:
         network: Netflix
     summary: A collection of Netflix content
     url_poster: https://github.com/arkyntech/pmm-configs/raw/main/images/Networks/network_netflix.jpg
@@ -66,8 +79,10 @@ collections:
     template: { name: Originals }
     smart_filter:
       sort_by: originally_available.desc
-      all:
+      validate: false
+      any:
         network: Paramount+
+        network: Paramount Plus
     summary: A collection of Paramount+ content
     url_poster: https://github.com/arkyntech/pmm-configs/raw/main/images/Networks/network_paramount.jpg
 
@@ -75,7 +90,8 @@ collections:
     template: { name: Originals }
     smart_filter:
       sort_by: originally_available.desc
-      all:
+      validate: false
+      any:
         network: Peacock
     summary: A collection of Peacock content
     url_poster: https://github.com/arkyntech/pmm-configs/raw/main/images/Networks/network_peacock.jpg
@@ -84,7 +100,8 @@ collections:
     template: { name: Originals }
     smart_filter:
       sort_by: originally_available.desc
-      all:
+      validate: false
+      any:
         network: Quibi
     summary: A collection of Quibi content
     url_poster: https://github.com/arkyntech/pmm-configs/raw/main/images/Networks/network_quibi.jpg
@@ -93,7 +110,8 @@ collections:
     template: { name: Originals }
     smart_filter:
       sort_by: originally_available.desc
-      all:
+      validate: false
+      any:
         network: Stan
     summary: A collection of Stan content
     url_poster: https://github.com/arkyntech/pmm-configs/raw/main/images/Networks/network_stan.jpg
@@ -102,7 +120,8 @@ collections:
     template: { name: Originals }
     smart_filter:
       sort_by: originally_available.desc
-      all:
+      validate: false
+      any:
         network: Starz
     summary: A collection of Starz content
     url_poster: https://github.com/arkyntech/pmm-configs/raw/main/images/Networks/network_starz.jpg
@@ -111,7 +130,10 @@ collections:
     template: { name: Originals }
     smart_filter:
       sort_by: originally_available.desc
-      all:
+      validate: false
+      any:
         network: Youtube
+        network: YouTube
+        network: YouTube Premium
     summary: A collection of Youtube content
     url_poster: https://github.com/arkyntech/pmm-configs/raw/main/images/Networks/network_youtube.jpg
