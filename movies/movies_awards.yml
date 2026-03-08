@@ -44,7 +44,7 @@ collections:
     imdb_list: https://www.imdb.com/search/title/?groups=emmy_nominee&title_type=feature&sort=year,desc&count=100
     summary: A collection of Emmy Award Nominees
     url_poster: https://github.com/arkyntech/pmm-configs/raw/main/images/Awards/awards_emmy_nominated.jpg
-
+  
   Golden Globes Winners:
     template: {name: Awards, num: 92}
     imdb_search:
@@ -61,3 +61,4 @@ collections:
     imdb_list: https://www.imdb.com/search/title/?groups=golden_globe_nominee&title_type=feature&sort=year,desc&count=100
     summary: A collection of Golden Globes Nominees
     url_poster: https://github.com/arkyntech/pmm-configs/raw/main/images/Awards/awards_goldenglobes_nominated.jpg
+  
