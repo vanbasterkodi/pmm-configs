@@ -7,7 +7,7 @@ templates:
     cache_builders: 7
     imdb_search:
       type: tv_series
-      sort_by: vote_average.desc
+      sort_by: rating.desc
       genre: <<genre>>
       votes.gte: 30000
       limit: 150
